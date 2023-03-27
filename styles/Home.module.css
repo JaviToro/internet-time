@@ -8,14 +8,17 @@
 
 .clock {
   font-size: 20vw;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-align: center;
   width: 100%;
 }
 
+.clock p:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .clock {
-    font-size: 10vw;
+    font-size: 15vw;
   }
 }

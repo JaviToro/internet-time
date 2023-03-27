@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 import { now } from "dot-beat-time"
 import styles from "@/styles/Home.module.css"
+import { Roboto_Mono } from "next/font/google"
+
+const robotoMono = Roboto_Mono({ subsets: ["latin"] })
 
 export default function Clock() {
   const [time, setTime] = useState<string>("")
@@ -14,5 +17,15 @@ export default function Clock() {
     return () => clearInterval(interval)
   }, [])
 
-  return <div className={styles.clock}>{time}</div>
+  function copyTime() {
+    navigator.clipboard.writeText(time)
+  }
+
+  return (
+    <div className={styles.clock}>
+      <p className={robotoMono.className} onClick={copyTime}>
+        {time}
+      </p>
+    </div>
+  )
 }
