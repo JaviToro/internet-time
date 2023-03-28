@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Internet Time
+![GitHub](https://img.shields.io/github/license/javitoro/internet-time) [![GitHub issues](https://img.shields.io/github/issues/JaviToro/internet-time)](https://github.com/JaviToro/internet-time/issues) [![GitHub forks](https://img.shields.io/github/forks/JaviToro/internet-time)](https://github.com/JaviToro/internet-time/network)
+
+## Introduction
+Swatch Internet Time (or .beat time) is a decimal time concept introduced in 1998 by the Swatch corporation as part of their marketing campaign for their line of "Beat" watches.
+
+Instead of hours and minutes, the mean solar day is divided into 1,000 parts called .beats. Each .beat is equal to one decimal minute in the French Revolutionary decimal time system and lasts 1 minute and 26.4 seconds (86.4 seconds) in standard time. Times are notated as a 3-digit number out of 1,000 after midnight. So, for example, @248 would indicate a time 248 .beats after midnight, representing 248⁄1000 of a day, just over 5 hours and 57 minutes.
+
+There are no time zones in Swatch Internet Time; instead, it is globally based on what is conventionally known as Central European Time, West Africa Time, and UTC+1, which is the time zone in which Swatch's headquarters in Biel, Switzerland, is located; Swatch calls this "Biel Mean Time" (BMT), despite the fact that it is not actually mean solar time as measured in Biel. Unlike civil time in Switzerland and many other countries, Swatch Internet Time does not observe daylight saving time.
+
+*(From [Wikipedia](https://en.wikipedia.org/wiki/Swatch_Internet_Time))*
 
 ## Getting Started
 
@@ -21,18 +31,3 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
